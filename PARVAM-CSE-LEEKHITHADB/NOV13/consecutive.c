@@ -1,9 +1,9 @@
 #include<stdio.h>
 int isCon(int n,int a[])
 {
-    for(int i=0;i<=n-2;i++)
+    for(int i=0;i<n-2;i++)
     {
-        if((a[i]%2==0) && (a[i+1]%2!=0) && (a[i+2]%2!=0))
+        if((a[i]%2!=0) && (a[i+1]%2!=0) && (a[i+2]%2!=0))
         {
             return 1;
         }
